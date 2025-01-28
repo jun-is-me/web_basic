@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>웹에 대한 공부</title>
+        <!--내부스타일 : style 태그-->
+        <!-- <style>
+            li {
+                background-color: antiquewhite;
+            }
+        </style> -->
+
+        <!--외부스타일-->
+        <link rel="stylesheet" type="text/css" href="./02.css">
+    </head>
+
+    <body>
+    <div id="content">
+        <!--인라인스타일 : style속성-->
+        <!--<nav style="background-color: aliceblue;">-->
+        <nav>
+            <ul>
+                <!--<li style="background-color: aquamarine;"><a href="#htmlDiv">HTML</a></li>-->
+                <li><a href="#htmlDiv">HTML</a></li>
+                <li><a href="#cssDiv">CSS</a></li>
+                <li><a href="#jsDiv">JavaScript</a></li>
+                <li><a href="#reactDiv">React</a></li>
+                <li><a href="https://www.facebook.com">facebook</a></li>
+                <li><a href="https://www.instagram.com">instagram</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <h1>프론트엔드 FrontEnd</h1>
+
+                <p>
+                    웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다.
+                    <br>
+                    프론트엔드쪽에서는 주로 HTML, CSS, 자바스크립트가 쓰이며,
+                    요즘은 페이스북에서 개발한 자바스크립트에서 파생된 싱글 페이지 애플리케이션 형태의
+                    리액트가 많이 사용된다.
+                </p>
+            </header>
+
+            <section id="htmlDiv">
+                <h2>HTML</h2>
+                <div>
+                    <div>
+                        <img src="../img/html.png">
+                        <p>출처:https://gangpro.github.io/til/2020/03/04/til-til-CSS00/</p>
+                    </div>
+                    <P class="p1">
+                        웹사이트의 모습을 기술하기 위한 마크업 언어(참고:나무위키)
+                    </P>
+                </div>
+            </section>
+            
+            <section id="cssDiv">
+                <h2>CSS</h2>
+                <div>
+                    <div>
+                        <img src="../img/css.png">
+                        <p>출처:https://gangpro.github.io/til/2020/03/04/til-til-CSS00/</p>
+                    </div>
+                    <P class="p2">
+                        HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어(참고:나무위키)
+                    </P>
+                </div>
+            </section>
+
+            <section id="jsDiv">
+                <h2>JavaScript</h2>
+                <div>
+                    <div>
+                        <img src="../img/js.png">
+                        <p>출처:https://gangpro.github.io/til/2020/03/04/til-til-CSS00/</p>
+                    </div>
+                    <p class="p1">
+                        Ecma International의 프로토타입 기반의 프로그래밍 언어(참고:나무위키)
+                    </p>
+                </div>
+            </section>
+
+            <section id="reactDiv">
+                <h2>React</h2>
+                <div>
+                    <div>
+                        <img src="../img/react.png">
+                        <p>출처:https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%95%A1%ED%8A%B8_(%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)</p>
+                    </div>
+                    <p>
+                        메타에서 개발한 오픈 소스 자바스크립트 라이브러리(참고:나무위키)
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <h1>※자체적인 만들어보는 독학 페이지※</h1>
+                <h2>백엔드에 대해서 작성</h2>
+                <h3>위에서 ul써봤으니 ol을 써보자</h3>
+                <ol>
+                    <li>Node.js</li>
+                    <p>
+                        단일 처리 시스템으로 알고 있지만 대신 그 만큼 서버 확장은 용이하다고 한다.
+                        JavaScript를 사용한다. 프레임워크 마냥 소개하는 경우도 많은데 정확히 그건 아니고 정확히는 JavaScript런타임이라한다.
+                        <br>
+                        <br>
+                        런타임이란?
+                        <br>
+                        운영체제 위 또는 운영체제 자체에서 실행되면서 특정 프로그래밍 언어가 구동될 수 있는 환경
+                        <div>
+                            <img src="../img/run.png">
+                            <p>출처:https://funveloper.tistory.com/19</p>
+                        </div>
+                    </p>
+                    <li>Spring boot</li>
+                    <p>
+                        Java 기반 프레임워크, 그냥 Spring과 다르게 개발자가 설정 파일을 작성하거나 컨테이너를 구성하거나 할 필요가 없다.(둘이 착각X)
+                        <br>
+                        Node.js와 달리 단일 처리(즉,Single Thread)가 아닌 다중 처리(즉,Multi Thread)인 것으로 알고 있다.
+                        <br>
+                        하지만 배우는 난이도가 좀더 어렵다고 한다.
+                    </p>
+                    <li>Nest.js</li>
+                    <p>
+                        Node.js 런타임 위에서 동작하는 TypeScript용 오픈 소스 백엔드 웹 프레임워크.(나무위키 참고)
+                        설명으로는 Node.js를 사용하는데 정해진 아키텍처가 없으니 개발자마다 다른 구조로 작성하게 되는데 이로 인해서 협업이나 유지 보수가 어려우니
+                        <br>
+                        이걸 보완하기 위해서 나온 것이라고 한다.
+                        <br>
+                        출처:https://www.elancer.co.kr/blog/detail/197
+                    </p>
+                </ol>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>

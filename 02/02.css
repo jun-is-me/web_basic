@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*nav {
+    background-color: aliceblue;
+}   이런식으로 태그명을 사용하면 요소 선택자*/
+
+#content {
+    background-color: aliceblue;
+    padding: 20px;
+}
+/*아이디는 #*/
+
+.p1 {
+    background-color: white;
+}
+/* .은 클래스 */
+
+.p2 {
+    background-color: aquamarine;
+}
+
+header, main, footer {
+    margin: 20px;
+}
+/*그룹 지정*/
+
+header > p {
+    margin: 20px;
+    font-weight: bold;
+    color: darkgray;
+}
+/*자식*/
+
+/*nav > ul > li:hover {
+    background-color: chocolate;
+}*/
+/*hover은 마우스가 올라갔을 때 변화하게 해줌*/
+
+nav li:hover{
+    background-color: greenyellow;
+}
+/*위와 동일*/
