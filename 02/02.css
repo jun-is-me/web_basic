@@ -3,6 +3,46 @@
     padding: 0px;
 }
 
+.runResize{
+    width: 500px;
+    height: 450px;
+}
+
+.resize {
+    width: 300px;
+    height: 250px;
+}
+
+ol > li {
+    margin: 20px;
+    font-weight: bold;
+    color: chocolate;
+}
+
+footer > div > ol {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div > ol > p{
+    font-size: small;
+}
+
+footer > div > h1 {
+    color: teal;
+}
+
+footer {
+    border-radius: 3%;
+    background-color: pink;
+}
+
+/*이 위는 전부 자체적으로 설정*/
+/*물론 아래도 상황 따라서 자체적으로 조절함*/
+
 /*nav {
     background-color: aliceblue;
 }   이런식으로 태그명을 사용하면 요소 선택자*/
@@ -13,14 +53,14 @@
 }
 /*아이디는 #*/
 
-.p1 {
+/* .p1 {
     background-color: white;
-}
+} */
 /* .은 클래스 */
 
-.p2 {
+/* .p2 {
     background-color: aquamarine;
-}
+} */
 
 header, main, footer {
     margin: 20px;
@@ -32,7 +72,7 @@ header > p {
     font-weight: bold;
     color: darkgray;
 }
-/*자식*/
+/*자식 관련으로 header안에 있는 p에 관련 된 것을 설정*/
 
 /*nav > ul > li:hover {
     background-color: chocolate;
@@ -40,6 +80,80 @@ header > p {
 /*hover은 마우스가 올라갔을 때 변화하게 해줌*/
 
 nav li:hover{
-    background-color: greenyellow;
+    background-color: purple;
 }
 /*위와 동일*/
+
+nav > ul {
+    display: flex; /*flex박스를 선언*/
+    flex-direction: row; /*flex박스 요소 정렬 방향(row가 기본값이라 생략해도 무방)*/
+    justify-content: center;    /*가로 축을 기준으로 좌우에 대한 정렬*/
+    align-items: center;    /*세로 축을 기준으로 정렬*/
+
+    list-style: none;
+}
+
+nav li {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+
+    background-color: royalblue;
+    color: white;   /*a태그의 특성으로 인해서 방영이 안됨*/
+}
+
+a {
+    color: white;
+    text-decoration: none;  /*기본 밑줄이 있는 상태인데 그걸 없애줌*/
+}
+
+/*a:link는 방문하지 않은 링크의 상태를 스타일링하는 데 사용, a는 앵커 태그를, link는 방문하지 않은 상태를 의미*/
+
+a:link {
+    color: white;
+}
+
+header {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section > h2 {
+    margin-bottom: 10px;
+    color: royalblue;
+}
+
+section > div {
+    display: flex;
+}
+
+section > div > div {
+    width: 20%;
+}
+
+section > div > p {
+    width: 80%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px){
+    #content {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
